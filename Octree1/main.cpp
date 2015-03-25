@@ -120,7 +120,7 @@ template <class type> void octree<type>::strc(vector<vector<type>> &init_value,v
     
     for (i=1; i<9; ++i){ //8 is for each subcube
         cout<<"---------"<<"\n"; z=0;
-        members.push_back(J); p_push(Center_MM,J,8,p+i,0); Center_MM.at(i+p).push_back(0); //init-count
+        members.push_back(J); p_push(Center_MM,J,8,p+i,0); Center_MM.at(i+p).push_back(0); 
         int temp=Center_MM[ii][8];
         for (j=0; j<temp; ++j){
             k=members[ii][j];
